@@ -37,7 +37,7 @@ bin/$(program_NAME): $(program_OBJS)
 	$(LINK.cc) $(program_OBJS) -o bin/$(program_NAME).o
 
 run: all
-	bin/$(program_NAME)
+	bin/$(program_NAME).o
 clean:
 	@- $(RM) $(program_OBJS)
 distclean: clean
